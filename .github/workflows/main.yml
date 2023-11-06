@@ -23,6 +23,6 @@ jobs:
         DOCKER_BUILDKIT: 1
       run: |
         docker buildx create --use
-        docker buildx build --platform linux/arm64 -t k0wshik2/raspiimage:main .
+        docker buildx build --platform linux/arm64 -t k0wshik2/raspiimage:arm64v8 .
         docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-        docker push k0wshik2/raspiimage:main
+        docker push k0wshik2/raspiimage:arm64v8
