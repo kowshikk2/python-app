@@ -1,3 +1,3 @@
 print("hello montra")
 
-input("Press any key to exit")
+input("Press any key to exit...")
