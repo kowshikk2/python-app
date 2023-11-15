@@ -1,5 +1,5 @@
-# Use the official Raspberry Pi OS image as the base image
-FROM arm64v8/debian:bookworm-slim
+# Use the official Python base image for ARM64
+FROM arm64v8/python:3.9-slim
 
 # Install any Python dependencies your code may have
 # For GPIO, you might need a library like RPi.GPIO
