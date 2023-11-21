@@ -1,6 +1,9 @@
 # Use the official Python base image for ARM64
 FROM arm64v8/python:3.9-slim
 
+#Set the user as root
+USER root
+
 # Install build tools and any necessary dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
