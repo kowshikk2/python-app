@@ -35,6 +35,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: k0wshik2/raspiimage:arm64v81
+          tags: k0wshik2/raspiimage:arm64v8
           labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/arm64
